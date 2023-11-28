@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-navbar {
+  background-color: #007600;
+}
+.lupa {
+  padding-top: 10px;
+}
+
+.lupa:hover {
+  background-color: #007600;
+  margin-top: 2px;
+}
+
+.btnmaleta:hover {
+  background-color: #9b6141;
+}
+
+.maleta {
+  font-size: 30px;
+}
+.formnav {
+  margin-left: 32%;
+}
+
+.bgmodal {
+  background-color: #9b6141;
+}
+
+.iniciomodal {
+  background-color: #825339;
+}
+
+.imgsesion {
+  margin-top: 60%;
+}
+
+.btn4botones {
+  background-color: #007600;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn4botones:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg:hover {
+  background-color: #825339;
+  color: white;
+}
+
+.btngoogle {
+  background-color: brown;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btngoogle:hover {
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+
+.btnfacebook {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btnfacebook:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.olvdtcontraseña:hover {
+  color: slateblue;
+}
+
+.carruselll {
+  height: 100%;
+}
+
+.categorias:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.tarjetas {
+  width: 18 rem;
+}
+
+.tarjetas img {
+  height: 40vh;
+  object-fit: cover;
+}
+.tarjetas p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-tarjeta {
+  background-color: #007600;
+}
+
+.btn-tarjeta:hover {
+  background-color: #9b6141;
+}
+
+.fsfooter {
+  font-size: 12px;
+}
+.iconos-redess {
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .formnav {
+    margin-left: 0;
+    text-align: start;
+  }
+}
+@media (max-width: 550px) {
+  .carrusel {
+    height: 100%;
+  }
+  .tarjetas {
+    width: 100%;
+  }
+  .publicidad {
+    display: none;
+  }
+}

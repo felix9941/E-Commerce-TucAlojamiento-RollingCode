@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pagina de alquiler en tucuman  'TucAlojamiento' "
+    />
+    <meta name="author" content="Felix Figueroa, Ramiro Soria" />
+    <meta
+      name="keywords"
+      content="alquiler, hotel, departamento, casas, tucuman, vacaciones"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Css/estilo.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/Logofavicon.png"
+      type="image/x-icon"
+    />
+    <!-- Fuente de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>TucAlojamiento</title>
+    <!-- pag iconos -->
+
+    <script
+      src="https://kit.fontawesome.com/c746f8770e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg d-block bg-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./img/LogoSinFondo (3).png"
+              alt="Logo-TucAlojamiento"
+              width="150px"
+            />
+          </a>
+          <button
+            class="navbar-toggler border"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <i class="fa-solid fa-bars p-1" style="color: #ffffff"></i>
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex formnav" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar   "
+                aria-label="Search"
+              />
+              <button class="btn btnicreg lupa">
+                <a href="" type="button">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: #ffffff"
+                  ></i>
+                </a>
+              </button>
+            </form>
+            <a href="./Html/carrito.html" class="btn btnmaleta" type="submit">
+              <i class="fa-solid fa-suitcase maleta" style="color: #ffffff"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="collapse navbar-collapse ms-2 me-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-start btn btn4botones"
+                aria-current="page"
+                href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white text-start btn btn4botones"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categoria
+              </a>
+              <ul class="dropdown-menu bg-navbar">
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="./Html/hotelCategoria.html"
+                    >Hotel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="./Html/departamentoCategoria.html"
+                    >Departamentos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="./Html/casaCategoria.html"
+                    >Casas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-start btn4botones active text-white"
+                aria-current="page"
+                href="./Html/sobreNosotros.html"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-start btn4botones active text-white"
+                aria-current="page"
+                href="./Html/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+
+          <div class="botones-inicio">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btnincregi"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Iniciar sesión
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bgmodal">
+                  <div class="modal-header iniciomodal">
+                    <h1
+                      class="modal-title fs-5 text-white text-center"
+                      id="exampleModalLabel"
+                    >
+                      Iniciar sesión
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="container-fluid d-flex">
+                    <div class="container-fluid text-center">
+                      <img
+                        src="./img/LogoSinFondo (3).png"
+                        alt="Logo-Iniciar sesión"
+                        width="100%"
+                        class="imgsesion"
+                      />
+                    </div>
+                    <div class="modal-body container-fluid">
+                      <form>
+                        <div class="mb-3">
+                          <label for="InputEmail" class="form-label text-white"
+                            >Ingresar Email</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="InputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Email"
+                            required
+                            minlength="3"
+                            maxlength="25"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="InputPassword"
+                            class="form-label text-white"
+                            >Ingresar contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="InputPassword"
+                            placeholder="Contraseña"
+                            required
+                            minlength="3"
+                            maxlength="16"
+                            pattern="[AZ-az-09]"
+                          />
+                        </div>
+                        <hr />
+                        <div class="text-center">
+                          <h5 class="text-white">Ingresar con:</h5>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btngoogle">
+                            <i
+                              class="fa-brands fa-google"
+                              style="color: #ffffff"
+                            ></i>
+                            Google
+                          </button>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btnfacebook">
+                            <i
+                              class="fa-brands fa-facebook-f"
+                              style="color: #ffffff"
+                            ></i>
+                            Facebook
+                          </button>
+                        </div>
+                        <div class="text-center">
+                          <a
+                            href=""
+                            class="text-primary-emphasis olvdtcontraseña"
+                          >
+                            ¿Olvidaste tu contraseña?</a
+                          >
+                        </div>
+
+                        <div class="text-center">
+                          <button
+                            type="submit"
+                            class="btn w-100 btnicreg text-white"
+                          >
+                            Iniciar sesión
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- termina Modal -->
+            <a
+              href="./Html/crearCuenta.html"
+              type="button"
+              class="btn btnincregi"
+              >Registrarse</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- carrusel -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/carrusel1.2.png"
+              class="d-block"
+              alt="Logo-TucAlojamiento1"
+              width="100%"
+              height="90%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carrusel2.3.png"
+              class="d-block"
+              alt="Logo-TucAlojamiento2"
+              width="100%"
+              height="90%"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Termina carrusel -->
+
+      <div class="container-fluid pt-4">
+        <h3>Alojamientos</h3>
+      </div>
+
+      <!-- Comienza cards -->
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://a0.muscache.com/im/pictures/556098f9-8b0b-4361-adf1-594dbadbb08d.jpg?im_w=960"
+                class="card-img-top"
+                alt="Casa Tafí del valle Tucumán"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Casa en la altura, Tafí del Valle, Tucumán
+                </h5>
+                <p class="card-text">
+                  Relájate con toda la familia en este tranquilo alojamiento.
+                  Cerca de la villa pero alejado del ruido. Ideal para descansar
+                  y pasar momentos únicos.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 26.900
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/casatafi.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://a0.muscache.com/im/pictures/8f80be88-cf68-4d53-9060-f4a15f6dda11.jpg?im_w=960"
+                class="card-img-top"
+                alt="Departamento centro San Miguel de Tucuman"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Departamento, Centro de SMT</h5>
+                <p class="card-text">
+                  Departamento cálido y confortable, con muy buena iluminación
+                  natural, perfectamente equipado para 3 personas.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 18.100
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/departamentoCentrotuc.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/501406264.jpg?k=881e5e315554b7999c6008d7a7085c5540a930bc1c055e1c5f6c5c09f49a1597&o=&hp=1"
+                class="card-img-top"
+                alt="Hotel Catalinas Tucuman"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hotel Catalinas Tucumán, en SMT</h5>
+                <p class="card-text">
+                  El Catalinas está situado frente del parque 9 de Julio, a 6
+                  calles del centro comercial y financiero. Ofrece alojamientos
+                  lujosos con wifi gratis.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 77.972
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/hotelcatalinastu.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://a0.muscache.com/im/pictures/d57421ff-dc84-4187-92ea-6594863a637f.jpg?im_w=960"
+                class="card-img-top"
+                alt="Departamento Yerba Buena Tucumán"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Departamento Yerba Buena, Tucumán</h5>
+                <p class="card-text">
+                  Departamento muy moderno y bien equipado. Se encuentra dentro
+                  de un complejo cerrado con seguridad con estacionamiento.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 21.000
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/departamentoyerbabuena.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://cf2.bstatic.com/xdata/images/hotel/max1280x900/327613763.jpg?k=89048453d6fba6734962a426e045306f9e01dd285bf2aa3ef0cd4c70d7ae947d&o=&hp=1"
+                class="card-img-top"
+                alt="Hotel Carlos V"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Hotel Carlos V, San Miguel de Tucumán
+                </h5>
+                <p class="card-text">
+                  El Hotel Carlos V cuenta con wifi gratis y está a 200 metros
+                  de la plaza principal. Ofrece un restaurante y habitaciones
+                  cómodas con aire acondicionado.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 39.452
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/hotelcarlosvtuc.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://a0.muscache.com/im/pictures/miso/Hosting-851527693152170350/original/030ac7fc-c637-4419-8ffa-75c8d72e1a85.jpeg?im_w=720"
+                class="card-img-top"
+                alt="Casa tipo domo Yerba Buena, Tucumán"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa tipo domo Yerba Buena, Tucumán</h5>
+                <p class="card-text">
+                  La alternativa única a los hoteles. Relajate en esta casa tipo
+                  domo, alojamiento único y tranquilo para desconectar y
+                  conectar con vos mismo.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 24.560
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/casatipodomoYB.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/53/0c/5e/swimming-pool-with-a.jpg?w=600&h=-1&s=1"
+                class="card-img-top"
+                alt="Hotel Sol San Javier, Tucumán"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Hotel Sol San Javier, San Javier, Tucumán
+                </h5>
+                <p class="card-text">
+                  Es un hotel 4 estrellas ubicado en la cima de cerro San
+                  Javier, rodeado de las yunga tucumana y con vista excepcional
+                  de la ciudad de San Miguel de Tucumán.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 33.780
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/hotelsanjaviertuc.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/492754407.jpg?k=96d1351d991cfbc0edce0f4535f2ef4e8c9f245ab6a6eaede7e59910a147d78a&o=&hp=1"
+                class="card-img-top"
+                alt="Casa Yerba Buena Tucumán. Barrio Privado"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Casa en barrio privado. Yerba Buena, Tuc
+                </h5>
+                <p class="card-text">
+                  El Yerba Buena - Barrio Privado ofrece aire acondicionado y se
+                  encuentra en Cevil Pozo, a 10 km de la plaza Independencia y a
+                  28 km del Dique El Cadillal.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 70.005
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/casabarrioprivadoYB.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/319950230.jpg?k=50c6031934846d4737f239db58a065f47ee3d4d981d1de78587e7fda5db40afd&o=&hp=1"
+                class="card-img-top"
+                alt="Departamento Tafí Viejo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Departamento Tafí Viejo, Tucumán</h5>
+                <p class="card-text">
+                  El Departamento en zona céntrica Tafí Viejo se encuentra en
+                  Tafí Viejo. Este alojamiento con aire acondicionado está a 13
+                  km de San Miguel de Tucumán.
+                </p>
+                <div>
+                  <p class="card-text fs-4">
+                    Precio por Noche:
+                    <br />
+                    $ 14.893
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    href="./Html/departamentotafiviejo.html"
+                    class="btn btn-tarjeta text-white"
+                    >VER MÁS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Termina cards -->
+
+      <!-- Comoienzas logos de marcas -->
+      <div class="m-3">
+        <h3>Nuestros Marcas</h3>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="data:image/png;base64,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"
+              alt="Logo hotel carlos v"
+              width="150px"
+              height="130px"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="https://sedetucuman.com.ar/gestor/wp-content/uploads/2012/03/Hotel-San-Javier.jpg"
+              alt="Logo hotel san javier"
+              width="150px"
+              height="110px"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="https://agenda.eltucumano.com/fotos/lugares/2018/04/03/180403122358.jpg"
+              alt="Logo hotel sheraton"
+              width="150px"
+              height="110px"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="https://i0.wp.com/tucumanbureau.com.ar/gestor/wp-content/uploads/2014/03/Catalinas-Park-230.jpg"
+              alt="Logo hotel catalinas"
+              width="150px"
+              height="110px"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="data:image/png;base64,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"
+              alt="Logo hotel lunahuana"
+              width="150px"
+              height="120px"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2 mb-3 text-center">
+            <img
+              src="https://www.peachtreeresidential.com/wp-content/uploads/2020/06/Garden-Park-logo-black.png"
+              alt="Logo hotel garden park"
+              width="150px"
+              height="80px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Terminas Logos de marcas -->
+
+      <!-- Comienza card noticias -->
+      <div class="m-3">
+        <h3>Noticias</h3>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://latitur.com/uploads/media/cactus_product_tours_by_locals/9368.swaventura@hotmail.com/16363/thumb_16363_cactus_product_tours_by_locals_large.jpeg"
+                class="card-img-top"
+                alt="Noticia act. Tucumán"
+              />
+              <div class="card-body">
+                <a
+                  href="https://www.tripadvisor.com.ar/Attractions-g312826-Activities-San_Miguel_de_Tucuman_Province_of_Tucuman_Northern_Argentina.html"
+                  class="text-decoration-none text-black"
+                >
+                  <h5 class="card-title">
+                    Actividades que se pueden hacer en Tucumán
+                  </h5></a
+                >
+
+                <p class="card-text">
+                  Tucuman es una provincia con una cantidad inmensa de
+                  actividades. Aca podras ver algunas de ellas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a3/f7/9c.jpg"
+                class="card-img-top"
+                alt="Noticia cinco lugares"
+              />
+              <div class="card-body">
+                <a
+                  href="https://guia.viajobien.com/5-lugares-que-debes-conocer-de-tucuman/"
+                  class="text-decoration-none text-black"
+                >
+                  <h5 class="card-title">
+                    Cinco lugares para visitar en la provincia de Tucumán
+                  </h5></a
+                >
+
+                <p class="card-text">
+                  Los 5 lugares mas lindos de la provincia, no podes irte sin
+                  visitarlo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card tarjetas">
+              <img
+                src="https://estudia-en-argentina.com.ar/wp-content/uploads/2023/09/San-Miguel-de-Tucuman.jpg"
+                class="card-img-top"
+                alt="Noticia curiosidades"
+              />
+              <div class="card-body">
+                <a
+                  href="https://www.serargentino.com/argentina/tradiciones/5-curiosidades-de-san-miguel-de-tucuman"
+                  class="text-decoration-none text-black"
+                >
+                  <h5 class="card-title">
+                    Algunas curiosidades de la provincia de Tucumán
+                  </h5></a
+                >
+
+                <p class="card-text">
+                  Estos datos tienen que ser motivo suficiente para despertar tu
+                  curiosidad y visitar la gran ciudad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comienza video -->
+
+      <div class="container-fluid">
+        <iframe
+          width="100%"
+          height="515"
+          src="https://www.youtube.com/embed/pAXkbgj-KSU?si=gJHbmBfydf_5CAiP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Termina video -->
+
+      <!-- Comienza Publicidad -->
+
+      <div class="container-fluid publicidad">
+        <img
+          src="https://www.comunicaciontucuman.gob.ar/assets/documents/logo-ente-autarquico-tucuman-turismo.png"
+          alt="Abona, envios, compra con seguridad"
+          width="100%"
+        />
+      </div>
+      <!-- Termina Publicidad -->
+    </main>
+
+    <!-- Comienza footer -->
+    <footer class="footer">
+      <div class="container-fluid bg-navbar">
+        <div class="row pt-1 align-items-center fsfooter">
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <a href="index.html">
+              <img
+                src="./img/LogoSinFondo (3).png"
+                alt="Logofotter"
+                width="210px"
+            /></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <h4 class="text-white">AYUDA</h4>
+            <div>
+              <a
+                href="./Html/defensaconsumidor.html"
+                class="text-decoration-none text-white"
+                >DEFENSA DEL CONSUMIDOR</a
+              >
+              <br />
+              <a
+                href="./Html/terminosycondiciones.html"
+                class="text-decoration-none text-white"
+                >TERMINOS Y CONDICIONES</a
+              >
+              <br />
+              <a
+                href="./Html/sobreNosotros.html"
+                class="text-decoration-none text-white"
+                >SOBRE NOSOTROS</a
+              >
+              <br />
+              <a
+                href="./Html/contacto.html"
+                class="text-decoration-none text-white"
+                >CONTACTO</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <h4 class="text-white">SEGUINOS</h4>
+            <div>
+              <a
+                href="https://www.instagram.com/"
+                class="text-white text-decoration-none"
+              >
+                <i
+                  class="fa-brands fa-instagram iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                Instagram</a
+              >
+              <br />
+              <a
+                href="https://www.facebook.com/"
+                class="text-white text-decoration-none text-center"
+              >
+                <i
+                  class="fa-brands fa-facebook iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                Facebook
+              </a>
+              <br />
+              <a
+                href="https://www.youtube.com/"
+                class="text-white text-decoration-none"
+              >
+                <i
+                  class="fa-brands fa-youtube iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                YouTube
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.106067949536!2d-65.20974192598635!3d-26.836578490024312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1699209007450!5m2!1ses!2sar"
+              width="130"
+              height="100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Termina footer -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

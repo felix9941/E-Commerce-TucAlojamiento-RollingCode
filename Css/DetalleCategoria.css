@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+/*INICIO NAVBAR Y FOOTER*/
+
+.bg-navbar {
+  background-color: #007600;
+}
+.lupa {
+  padding-top: 10px;
+}
+
+.lupa:hover {
+  background-color: #007600;
+  margin-top: 2px;
+}
+
+.btnmaleta:hover {
+  background-color: #9b6141;
+}
+
+.maleta {
+  font-size: 30px;
+}
+.formnav {
+  margin-left: 32%;
+}
+
+.bgmodal {
+  background-color: #9b6141;
+}
+
+.iniciomodal {
+  background-color: #825339;
+}
+
+.imgsesion {
+  margin-top: 60%;
+}
+
+.btn4botones {
+  background-color: #007600;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn4botones:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg:hover {
+  background-color: #825339;
+  color: white;
+}
+
+.btngoogle {
+  background-color: brown;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btngoogle:hover {
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+
+.btnfacebook {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btnfacebook:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.olvdtcontraseña:hover {
+  color: slateblue;
+}
+
+.categorias:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.fsfooter {
+  font-size: 12px;
+}
+.iconos-redess {
+  font-size: 22px;
+}
+/*FIN NAVBAR Y FOOTER*/
+/* casa */
+
+.carrusel {
+  height: 100%;
+  object-fit: cover;
+}
+
+.huesped {
+  width: 50%;
+}
+
+.huesped:hover {
+  background-color: #007600;
+  color: white;
+}
+
+.contcalendario {
+  width: 60%;
+}
+
+.calendario {
+  color: grey;
+}
+
+.btncalendar {
+  background-color: white;
+}
+
+.btncalendar:hover {
+  background-color: #007600;
+  color: white;
+}
+
+.calmarcado {
+  color: #007600;
+}
+
+.imgborde {
+  border-radius: 50%;
+}
+
+.comencont {
+  width: 60%;
+  font-size: 13px;
+}
+
+.btn-comentario {
+  background-color: #007600;
+  color: white;
+}
+.btn-comentario:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.textarea {
+  width: 100%;
+  height: 30vh;
+}
+
+.btn-card {
+  background-color: #007600;
+  color: white;
+  width: 60%;
+  margin-left: 20%;
+}
+
+/* footer */
+.btn-card:hover {
+  background-color: #9b6141;
+  color: white;
+}
+.fsfooter {
+  font-size: 12px;
+}
+
+.iconos-redess {
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .formnav {
+    margin-left: 0;
+    text-align: start;
+  }
+}
+@media (max-width: 995px) {
+  .carrusel {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .comencont {
+    width: 100%;
+  }
+  .contcalendario {
+    width: 100%;
+  }
+}

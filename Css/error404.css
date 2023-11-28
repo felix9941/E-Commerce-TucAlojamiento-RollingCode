@@ -1,0 +1,9 @@
+.btn-volver {
+  background-color: #007600;
+  color: white;
+}
+
+.btn-volver:hover {
+  background-color: #9b6141;
+  color: white;
+}

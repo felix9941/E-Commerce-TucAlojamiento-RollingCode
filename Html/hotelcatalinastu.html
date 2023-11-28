@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pagina de alquiler en tucumán  'TucAlojamiento' "
+    />
+    <meta name="author" content="Felix Figueroa, Ramiro Soria" />
+    <meta
+      name="keywords"
+      content="alquiler, hotel, departamento, casas, tucuman, vacaciones"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/DetalleCategoria.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/Logofavicon.png"
+      type="image/x-icon"
+    />
+    <!-- Fuente de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>TucAlojamiento - Hotel Catalinas Tucumán</title>
+    <!-- pag iconos -->
+
+    <script
+      src="https://kit.fontawesome.com/c746f8770e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg d-block bg-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../img/LogoSinFondo (3).png"
+              alt="Logo-TucAlojamiento"
+              width="150px"
+            />
+          </a>
+          <button
+            class="navbar-toggler border"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <i class="fa-solid fa-bars p-1" style="color: #ffffff"></i>
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex formnav" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar   "
+                aria-label="Search"
+              />
+              <button class="btn btnicreg lupa">
+                <a href="" type="button">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: #ffffff"
+                  ></i>
+                </a>
+              </button>
+            </form>
+            <a href="../Html/carrito.html" class="btn btnmaleta" type="submit">
+              <i class="fa-solid fa-suitcase maleta" style="color: #ffffff"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="collapse navbar-collapse ms-2 me-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-start btn btn4botones"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white text-start btn btn4botones"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categoria
+              </a>
+              <ul class="dropdown-menu bg-navbar">
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="../Html/hotelCategoria.html"
+                    >Hotel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="../Html/departamentoCategoria.html"
+                    >Departamentos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white categorias"
+                    href="../Html/casaCategoria.html"
+                    >Casas</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-start btn4botones active text-white"
+                aria-current="page"
+                href="../Html/sobreNosotros.html"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-start btn4botones active text-white"
+                aria-current="page"
+                href="../Html/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+
+          <div class="botones-inicio">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btnincregi"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Iniciar sesión
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bgmodal">
+                  <div class="modal-header iniciomodal">
+                    <h1
+                      class="modal-title fs-5 text-white text-center"
+                      id="exampleModalLabel"
+                    >
+                      Iniciar sesión
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="container-fluid d-flex">
+                    <div class="container-fluid text-center">
+                      <img
+                        src="../img/LogoSinFondo (3).png"
+                        alt="Logo-Iniciar sesión"
+                        width="100%"
+                        class="imgsesion"
+                      />
+                    </div>
+                    <div class="modal-body container-fluid">
+                      <form>
+                        <div class="mb-3">
+                          <label for="InputEmail" class="form-label text-white"
+                            >Ingresar Email</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="InputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Email"
+                            required
+                            minlength="3"
+                            maxlength="25"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="InputPassword"
+                            class="form-label text-white"
+                            >Ingresar contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="InputPassword"
+                            placeholder="Contraseña"
+                            required
+                            minlength="3"
+                            maxlength="16"
+                            pattern="[AZ-az-09]"
+                          />
+                        </div>
+                        <hr />
+                        <div class="text-center">
+                          <h5 class="text-white">Ingresar con:</h5>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btngoogle">
+                            <i
+                              class="fa-brands fa-google"
+                              style="color: #ffffff"
+                            ></i>
+                            Google
+                          </button>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btnfacebook">
+                            <i
+                              class="fa-brands fa-facebook-f"
+                              style="color: #ffffff"
+                            ></i>
+                            Facebook
+                          </button>
+                        </div>
+                        <div class="text-center">
+                          <a
+                            href=""
+                            class="text-primary-emphasis olvdtcontraseña"
+                          >
+                            ¿Olvidaste tu contraseña?</a
+                          >
+                        </div>
+
+                        <div class="text-center">
+                          <button
+                            type="submit"
+                            class="btn w-100 btnicreg text-white"
+                          >
+                            Iniciar sesión
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- termina Modal -->
+            <a
+              href="../Html/crearCuenta.html"
+              type="button"
+              class="btn btnincregi"
+              >Registrarse</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container carrusel mt-4">
+        <div class="row text-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/501406264.jpg?k=881e5e315554b7999c6008d7a7085c5540a930bc1c055e1c5f6c5c09f49a1597&o=&hp=1"
+                    class="d-block w-100 h-100"
+                    alt="Hotel-Foto"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cf2.bstatic.com/xdata/images/hotel/max1280x900/501406254.jpg?k=02df125432e97af37309711983ca99c1533d286866df40ae3da6dfe0949d540a&o=&hp=1"
+                    class="d-block w-100"
+                    alt="Hotel-Foto"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://cf2.bstatic.com/xdata/images/hotel/max1280x900/415818798.jpg?k=69c1bafac0456549abba427e8065ca8828d35176dcac61fc7b114fdd5041d2df&o=&hp=1"
+                    class="d-block w-100"
+                    alt="Hotel-Foto"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 -md-2 col-lg-6 text-start">
+            <h4>Hotel Catalinas Tucumán, en San Miguel de Tucumán</h4>
+            <h5 class="pt-3">Cantidad de huspedes</h5>
+            <input type="number" placeholder="1" class="text-center" />
+
+            <div class="pt-4">
+              <h5>Precio por noche:</h5>
+              <h5>$ 77.972</h5>
+            </div>
+            <div>
+              <img
+                src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135017-visa_82256.png"
+                alt="Icon-Visa"
+                width="8%"
+              />
+              <img
+                src="https://cdn.icon-icons.com/icons2/2342/PNG/512/mastercard_old_payment_method_icon_142751.png"
+                alt="Icon-MasterCard"
+                width="8%"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4043/4043918.png"
+                alt="icon-Tarjeta"
+                width="8%"
+              />
+              <img
+                src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135020-american-express_82257.png"
+                alt="Icon-AmericanExpress"
+                width="8%"
+              />
+              <img
+                src="https://logospng.org/download/mercado-pago/logo-mercado-pago-icone-1024.png"
+                alt="icon-MercadoPago"
+                width="8%"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3832/3832329.png"
+                alt="Icon-Pago"
+                width="6%"
+              />
+            </div>
+            <div class="container-fluid">
+              <a href="../Html/error404.html" class="btn btn-card mt-4 mb-4">
+                Consultar disponibilidad
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <h3>Acerca de este alojamiento</h3>
+        <p>
+          El Catalinas está situado frente del parque 9 de Julio, a 6 calles del
+          centro comercial y financiero. Ofrece alojamientos lujosos con wifi
+          gratis, gimnasio y pileta al aire libre.
+          <br />
+          Las amplias habitaciones del Hotel Catalinas Park incluyen TV LCD por
+          cable, minibar y escritorio. Algunas tienen zona de estar
+          independiente y amplios ventanales con vistas al parque. Se ofrece
+          room service todos los días, las 24 horas.
+          <br />
+          El bar sirve un desayuno buffet y ofrece música de piano en directo
+          por las noches. El restaurante Las Cãnas sirve platos regionales de
+          carne y pescado para el almuerzo y la cena y vinos selectos.
+
+          <br />
+          El Catalinas Park está a 10 minutos en auto del aeropuerto
+          internacional Benjamín Matienzo y a 5 calles de la terminal de micros.
+          Ofrece estacionamiento gratuito, sujeto a disponibilidad
+        </p>
+        <h4>Normas de la casa</h4>
+        <p>
+          Check-in: de 12:00
+          <br />
+          Check-out: antes de las 10:00
+          <br />
+          1 huésped como máximo.
+          <br />
+          Se permiten mascotas.
+          <br />
+          No se permiten fiestas ni eventos.
+          <br />
+          Estacionamiento.
+          <br />
+          Aire acondicionando.
+          <br />
+          Caja de fuerte. No se permite fumar.
+        </p>
+      </div>
+
+      <div class="container mt-5 contcalendario">
+        <table class="table table-bordered">
+          <thead class="text-center">
+            <tr>
+              <th colspan="7">Noviembre 2023</th>
+            </tr>
+            <tr class="text-center">
+              <th>Lu.</th>
+              <th>Ma.</th>
+              <th>Mi.</th>
+              <th>Ju.</th>
+              <th>Vi.</th>
+              <th>Sá.</th>
+              <th>Do.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td></td>
+              <td></td>
+              <td><del class="calendario">1</del></td>
+              <td><del class="calendario">2</del></td>
+              <td><del class="calendario">3</del></td>
+              <td><del class="calendario">4</del></td>
+              <td><del class="calendario">5</del></td>
+            </tr>
+            <tr class="text-center">
+              <td><del class="calendario">6</del></td>
+              <td><del class="calendario">7</del></td>
+              <td><del class="calendario">8</del></td>
+              <td><del class="calendario">9</del></td>
+              <td><del class="calendario">10</del></td>
+              <td><del class="calendario">11</del></td>
+              <td><del class="calendario">12</del></td>
+            </tr>
+            <tr class="text-center">
+              <td><del class="calendario">13</del></td>
+              <td><del class="calendario">14</del></td>
+              <td><del class="calendario">15</del></td>
+              <td><del class="calendario">16</del></td>
+              <td><del class="calendario">17</del></td>
+              <td><del class="calendario">18</del></td>
+              <td><del class="calendario">19</del></td>
+            </tr>
+
+            <tr class="text-center">
+              <td><del class="calendario">20</del></td>
+              <td><del class="calendario">21</del></td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  22
+                </button>
+              </td>
+              <td>
+                <button
+                  class="text-decoration-none border-0 w-100 btncalendar calmarcado"
+                >
+                  23
+                </button>
+              </td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  24
+                </button>
+              </td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  25
+                </button>
+              </td>
+              <td>
+                <button
+                  class="text-decoration-none border-0 w-100 btncalendar calmarcado"
+                >
+                  26
+                </button>
+              </td>
+            </tr>
+
+            <tr class="text-center">
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  27
+                </button>
+              </td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  28
+                </button>
+              </td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  29
+                </button>
+              </td>
+              <td>
+                <button class="text-decoration-none border-0 w-100 btncalendar">
+                  30
+                </button>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container mt-5">
+        <h3>Comentarios</h3>
+      </div>
+      <div class="container mt-4 comencont">
+        <div class="card">
+          <div class="card-header align-items-center d-flex">
+            <div>
+              <img
+                src="https://ca.slack-edge.com/THQU1MGPN-UNTT3ENV6-3994fab9d06e-512"
+                alt="ico-Usu1"
+                width="35px
+              "
+                class="imgborde"
+              />
+            </div>
+            <div>
+              <h6 class="ms-3 mt-2">Andres Perlo</h6>
+            </div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">12/06/2023</h6>
+            <p class="card-text">
+              "¡Experiencia maravillosa! La variedad de opciones de alquiler y
+              la facilidad de reserva hicieron que mi viaje a Tucumán fuera
+              inolvidable. El servicio al cliente fue excepcional,
+              ¡definitivamente recomendaré esta página a amigos y familiares!"
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4 comencont">
+        <div class="card">
+          <div class="card-header d-flex align-items-center">
+            <div>
+              <img
+                src="https://ca.slack-edge.com/THQU1MGPN-U033KMJFA7L-9b364c02dc4e-512"
+                alt="ico-Usu2"
+                width="35px
+              "
+                class="imgborde"
+              />
+            </div>
+            <div><h6 class="ms-3 mt-2">Maximiliano Busi</h6></div>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">13/10/2023</h6>
+            <p class="card-text">
+              Encontré la opción perfecta para mi estancia en Tucumán. El
+              proceso de reserva fue fácil y rápido, y el alojamiento superó mis
+              expectativas. Fue una experiencia unica. ¡Altamente recomendado!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4 comencont">
+        <div class="card">
+          <div class="card-header d-flex align-items-center">
+            <div>
+              <img
+                src="https://ca.slack-edge.com/THQU1MGPN-U03L71N0QH1-ee790d9f58be-512"
+                alt="ico-Usu3"
+                width="40px
+                
+              "
+                class="imgborde"
+              />
+            </div>
+            <div>
+              <h6 class="ms-3 mt-2">Benjamin Cappetta</h6>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">1/11/2023</h5>
+            <p class="card-text">
+              TucAlojamiento superó mis expectativas en cada aspecto. Desde la
+              facilidad de reserva hasta la comodidad y calidad de los
+              alojamientos ofrecidos, definitivamente recomendaría esta página
+              web a cualquier persona en busca de una estancia única en Tucumán.
+              ¡Gracias por hacer que mi viaje sea inolvidable!"
+            </p>
+          </div>
+        </div>
+        <div class="mt-3 mb-3 text-center">
+          <textarea
+            name=""
+            id=""
+            class="textarea"
+            required
+            placeholder="  Ingresa tu comentario"
+          ></textarea>
+          <a href="../Html/error404.html" class="btn btn-comentario">
+            Enviar comentario
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Comienza footer -->
+    <footer class="footer">
+      <div class="container-fluid bg-navbar">
+        <div class="row pt-1 align-items-center fsfooter">
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <a href="../Html/hotelcatalinastu.html">
+              <img
+                src="../img/LogoSinFondo (3).png"
+                alt="Logofotter"
+                width="210px"
+            /></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <h4 class="text-white">AYUDA</h4>
+            <div>
+              <a
+                href="../Html/defensaconsumidor.html"
+                class="text-decoration-none text-white"
+                >DEFENSA DEL CONSUMIDOR</a
+              >
+              <br />
+              <a
+                href="../Html/terminosycondiciones.html"
+                class="text-decoration-none text-white"
+                >TERMINOS Y CONDICIONES</a
+              >
+              <br />
+              <a
+                href="../Html/sobreNosotros.html"
+                class="text-decoration-none text-white"
+                >SOBRE NOSOTROS</a
+              >
+              <br />
+              <a
+                href="../Html/contacto.html"
+                class="text-decoration-none text-white"
+                >CONTACTO</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <h4 class="text-white">SEGUINOS</h4>
+            <div>
+              <a
+                href="https://www.instagram.com/"
+                class="text-white text-decoration-none"
+              >
+                <i
+                  class="fa-brands fa-instagram iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                Instagram</a
+              >
+              <br />
+              <a
+                href="https://www.facebook.com/"
+                class="text-white text-decoration-none text-center"
+              >
+                <i
+                  class="fa-brands fa-facebook iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                Facebook
+              </a>
+              <br />
+              <a
+                href="https://www.youtube.com/"
+                class="text-white text-decoration-none"
+              >
+                <i
+                  class="fa-brands fa-youtube iconos-redess"
+                  style="color: #ffffff"
+                ></i>
+                YouTube
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mt-2 mb-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.106067949536!2d-65.20974192598635!3d-26.836578490024312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1699209007450!5m2!1ses!2sar"
+              width="130"
+              height="100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Termina footer -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

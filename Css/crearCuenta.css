@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*INICIO NAVBAR Y FOOTER*/
+
+.bg-navbar {
+  background-color: #007600;
+}
+.lupa {
+  padding-top: 10px;
+}
+
+.lupa:hover {
+  background-color: #007600;
+  margin-top: 2px;
+}
+
+.btnmaleta:hover {
+  background-color: #9b6141;
+}
+
+.maleta {
+  font-size: 30px;
+}
+.formnav {
+  margin-left: 32%;
+}
+
+.bgmodal {
+  background-color: #9b6141;
+}
+
+.iniciomodal {
+  background-color: #825339;
+}
+
+.imgsesion {
+  margin-top: 60%;
+}
+
+.btn4botones {
+  background-color: #007600;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn4botones:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg:hover {
+  background-color: #825339;
+  color: white;
+}
+
+.btngoogle {
+  background-color: brown;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btngoogle:hover {
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+
+.btnfacebook {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btnfacebook:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.olvdtcontraseña:hover {
+  color: slateblue;
+}
+
+.categorias:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.fsfooter {
+  font-size: 12px;
+}
+.iconos-redess {
+  font-size: 22px;
+}
+/*FIN NAVBAR Y FOOTER*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  height: 115vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider {
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+.form {
+  position: absolute;
+  width: 40%;
+  padding: 31px;
+  border-radius: 10px;
+  background: #9b6141;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 2px black;
+}
+.Form1 {
+  margin-bottom: 320px;
+  margin-left: 30%;
+  margin-top: -45px;
+}
+.field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.field button {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: #42a120;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.field input {
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid#CACACA;
+}
+
+.field button:hover {
+  background-color: #9b6141;
+  color: white;
+}
+.form a {
+  color: #0171d3;
+  text-decoration: none;
+}
+.form-label {
+  margin-bottom: -0.5rem;
+}
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.facebook {
+  color: #fff;
+  background-color: #4267b2;
+  border: 1px solid black;
+}
+a.facebook .facebook-icon {
+  height: 28px;
+  width: 28px;
+  color: #0171d3;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.google-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  color: red;
+}
+.facebook-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+a.google {
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.google:hover {
+  background-color: #e16666;
+}
+a.google span {
+  font-weight: 500;
+  opacity: 0.6;
+  color: #232836;
+}
+
+@media (max-width: 420px) {
+  .navbardos {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    position: absolute;
+    margin-bottom: -140px;
+    width: 90%;
+    padding: 19px;
+    border-radius: 10px;
+    background: #9b6141;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 2px black;
+  }
+  .form-content {
+    width: 100%;
+  }
+  .Form1 {
+    margin-bottom: 450px;
+    margin-left: 5%;
+    margin-top: 150px;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+}

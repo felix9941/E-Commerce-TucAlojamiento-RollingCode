@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*INICIO NAVBAR Y FOOTER*/
+
+.bg-navbar {
+  background-color: #007600;
+}
+.lupa {
+  padding-top: 10px;
+}
+
+.lupa:hover {
+  background-color: #007600;
+  margin-top: 2px;
+}
+
+.btnmaleta:hover {
+  background-color: #9b6141;
+}
+
+.maleta {
+  font-size: 30px;
+}
+.formnav {
+  margin-left: 32%;
+}
+
+.bgmodal {
+  background-color: #9b6141;
+}
+
+.iniciomodal {
+  background-color: #825339;
+}
+
+.imgsesion {
+  margin-top: 60%;
+}
+
+.btn4botones {
+  background-color: #007600;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn4botones:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg:hover {
+  background-color: #825339;
+  color: white;
+}
+
+.btngoogle {
+  background-color: brown;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btngoogle:hover {
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+
+.btnfacebook {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btnfacebook:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.olvdtcontraseña:hover {
+  color: slateblue;
+}
+
+.carruselll {
+  height: 100%;
+}
+
+.categorias:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.fsfooter {
+  font-size: 12px;
+}
+.iconos-redess {
+  font-size: 22px;
+}
+/*FIN NAVBAR Y FOOTER*/
+.container-fluid {
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.contactos {
+  margin-bottom: 40px;
+  margin-left: 25%;
+}
+
+.contactos h5 {
+  color: black;
+  margin-bottom: 4%;
+}
+.contactos a {
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+a {
+  text-decoration: none;
+  color: #42a120;
+}
+.contactos iframe {
+  margin-left: 5%;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 4%;
+  margin-right: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px black;
+  font-weight: bold;
+  background-color: #9b6141;
+}
+.form-label {
+  color: white;
+}
+.botonForm {
+  color: white;
+  margin-top: 20px;
+  background-color: #42a120;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.botonForm:hover {
+  background-color: #9b6141;
+  color: white;
+  box-shadow: 0 0 2px black;
+}
+.btn {
+  color: white;
+}
+h4,
+h5 {
+  display: block;
+}
+
+.divider {
+  border: 2px solid black;
+  margin-top: 15px;
+}
+@media (max-width: 420px) {
+  .navbardos {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .carrusel {
+    height: 25vh;
+  }
+
+  .formulario {
+    width: 150%;
+    margin-left: -13%;
+  }
+  .contactos {
+    margin-bottom: 40px;
+    margin-left: -30%;
+  }
+  .contactos a {
+    margin-bottom: 15px;
+    margin-left: 7%;
+  }
+  .contactos h4,
+  h5 {
+    display: block;
+    margin-left: 40px;
+  }
+  .contactos iframe {
+    margin-left: 8%;
+    width: 102%;
+    height: 200%;
+  }
+}

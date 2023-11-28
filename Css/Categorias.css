@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+/*INICIO NAVBAR Y FOOTER*/
+
+.bg-navbar {
+  background-color: #007600;
+}
+.lupa {
+  padding-top: 10px;
+}
+
+.lupa:hover {
+  background-color: #007600;
+  margin-top: 2px;
+}
+
+.btnmaleta:hover {
+  background-color: #9b6141;
+}
+
+.maleta {
+  font-size: 30px;
+}
+.formnav {
+  margin-left: 32%;
+}
+
+.bgmodal {
+  background-color: #9b6141;
+}
+
+.iniciomodal {
+  background-color: #825339;
+}
+
+.imgsesion {
+  margin-top: 60%;
+}
+
+.btn4botones {
+  background-color: #007600;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn4botones:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnincregi:hover {
+  background-color: #9b6141;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg {
+  background-color: #007600;
+  color: white;
+  border: solid 1px;
+}
+
+.btnicreg:hover {
+  background-color: #825339;
+  color: white;
+}
+
+.btngoogle {
+  background-color: brown;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btngoogle:hover {
+  background-color: rgb(255, 63, 63);
+  color: white;
+}
+
+.btnfacebook {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.btnfacebook:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.olvdtcontraseña:hover {
+  color: slateblue;
+}
+
+.carruselll {
+  height: 100%;
+}
+
+.categorias:hover {
+  background-color: #9b6141;
+  color: white;
+}
+
+.fsfooter {
+  font-size: 12px;
+}
+.iconos-redess {
+  font-size: 22px;
+}
+/*FIN NAVBAR Y FOOTER*/
+.carousel-item img {
+  height: 610px;
+  width: auto;
+  margin: auto;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 20%;
+}
+
+h4 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.card {
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tarjetas p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-tarjeta {
+  background-color: #007600;
+}
+
+.btn-tarjeta:hover {
+  background-color: #9b6141;
+}
+.page-link {
+  color: #42a120;
+}
+.page-link:hover {
+  color: #9b6141;
+}
+@media (max-width: 991px) {
+  .formnav {
+    margin-left: 0;
+    text-align: start;
+  }
+}
+@media (max-width: 700px) {
+  .row {
+    margin: 0;
+  }
+  .tarjetas {
+    width: 100%;
+  }
+  .card {
+    margin-left: 1px;
+    width: 100%;
+  }
+  .card-img-top {
+    max-width: 100%;
+  }
+  .carousel-item img {
+    height: auto;
+    max-width: 100%;
+  }
+}
